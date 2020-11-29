@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Check</title>
+        
+        <!-- Line-awesome icon -->
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        
+        <!-- CSS -->
+        <style>
+            p {
+                display: none;
+                color: orange;
+            }
+            label {
+                display: block;
+            }
+            i {
+                margin-left: -30px;
+                cursor: pointer;
+            }
+            input {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form action="#">
+            
+            <!-- pseudo input and error message -->
+            <label for="pseudo">Entrez un pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo">
+            <p id="pseudoVide">Le pseudo est vide !</p>
+            <p id="pseudoMoins5">Le pseudo comporte moins de 5 caractères !</p>
+            
+            <!-- email input and error message -->
+            <label for="email">Entrez votre email</label>
+            <input type="email" id="email" name="email" placeholder="email">
+            <p id="emailVide">L'email est vide !</p>
+            <p id="incorrectEmail">L'email est incorrect</p>
+            
+            <!-- password input and error message -->
+            <label for="pass">Entrez un mot de passe</label>
+            <input type="password" id="pass" name="password" placeholder="mot de passe">
+            <i class="las la-eye" id="showpass1"></i>
+            <p id="passVide">Le mot de passe est vide !</p>
+            <p id="passMoins6">Le mot de passe comporte moins de 6 caractères !</p>
+            
+            <!-- confirm password input and error message -->
+            <label for="confirmpass">Confirmez votre mot de passe</label>
+            <input type="password" id="confirmpass" name="confirmpassword" placeholder="confirmer mot de passe">
+            <i class="las la-eye" id="showpass2"></i>
+            <p id="confirmPassVide">Le champ est vide !</p>
+            <p id="passNotMatching">Les deux champs ne sont pas identiques !</p>
+        
+        </form>
+
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
